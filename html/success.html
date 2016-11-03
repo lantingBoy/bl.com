@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册成功页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src='../js/jquery.js'></script>
+		<script type="text/javascript" src='../js/index.js'></script>
+		
+	</head>
+	<body style="background: #f9f9f9;">
+		<div class="login-header">
+			<div class="login-wrap">
+				<a href="#"> <img src="../img/header-logo.png" title="logo" alt="百联"/></a>	
+				<span><img src="../img/login-font4.png"></span>
+			</div>
+		</div>
+		<div class='login-mian'>
+			<div class="login-mian-cont">
+				<div class="login-mian-cont-top">
+						<div class="cont-top-1">
+						欢迎您加入i百联
+						</div>
+						<div class="loginsuccess">
+							
+						</div>
+						<div class="autoblank">
+							<p>已经注册成功,<span class="zuile"></span>秒后跳转至首页!<a href="../index.html">或点击此处跳转</a></p>
+						</div>	
+				</div>
+			</div>
+		</div>
+		<script >
+			//记数器
+				/*function countdown(){
+					count--;
+					//if(count==0){window.location.href='../index.html';}
+					$('.autoblank').children('p').text(count);
+				};
+				setInterval(function(){countdown()},1000)
+			});*/
+			//setInterval(function(){count--;$('.autoblank').children('p').text('1');},1000)
+			$(function(){
+				var count=10;
+				function countdown(){
+					count--;
+				};
+				setInterval(function(){countdown();$('.zuile').text(count);},1000)
+			
+			
+			setTimeout(function(){window.location.href='../index.html';},10000);
+			});
+			
+				   
+		</script>
+	</body>
+</html>

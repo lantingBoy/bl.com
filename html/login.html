@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆注册页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src='../js/jquery.js'></script>
+		<script type="text/javascript" src='../js/index.js'></script>
+		<script type="text/javascript" src="../js/jquery.validate.js"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="background: #f9f9f9;">
+		<div class="login-header">
+			<div class="login-wrap">
+				<a href="#"> <img src="../img/header-logo.png" title="logo" alt="百联"/></a>	
+				<span><img src="../img/login-font4.png"></span>
+			</div>
+		</div>
+		<!--------------------------------信息表单部分-->
+		<div class='login-mian'>
+			
+				<div class="login-mian-cont">
+					<div class="login-mian-cont-top">
+						<div class="cont-top-1">
+						您好，感谢您加入i百联
+						</div>
+						<div class="cont-top-2">
+							如有账号，请点击 <a href="#">登陆</a>
+						</div>
+					</div>
+					<div class="login-mian-cont-btm">
+						<form id="login-form" name="form1">
+							<div class="login-name">
+								<div class="login-name-left">
+									<i>*</i>用户名	
+								</div>
+								<div class="login-name-right">
+									<input name='loginname' type="text" placeholder="6-20位字符，支持字母或字母与数字组合">	
+								</div>
+							</div>
+							<div class="login-name">
+								<div class="login-name-left">
+									<i>*</i>登陆密码	
+								</div>
+								<div class="login-name-right">
+									<input id='Lgkey' name='loginkey' type="password" placeholder="6-20位字符，建议使用字母、符号和数字组合" class="login-input1"> 	
+								</div>
+							</div>
+							<div class="login-name">
+								<div class="login-name-left">
+									<i>*</i>确认密码	
+								</div>
+								<div class="login-name-right">
+									<input name='loginkeymore' type="password" placeholder="请再次输入密码" class="login-input2">	
+								</div>
+							</div>
+							<div class="login-name">
+								<div class="login-name-left">
+									<i>*</i>手机号	
+								</div>
+								<div class="login-name-right">
+									<input name='phonenum' type="text" placeholder="请输入11位手机号码" class="login-input3">	
+								</div>
+							</div>
+							<div class="login-name">
+								<div class="login-name-left">
+									<i>*</i>验证码	
+								</div>
+								<div class="login-name-right" >
+									<input name='logincode' style="width:130px" type="text" placeholder="请输入验证码" class="login-input4">	
+									<img src="../img/yanzhengma.jpg"/>
+								</div>
+							</div>
+							<div class="login-name">
+								<div class="login-name-left">
+									<i>*</i>短信验证码	
+								</div>
+								<div class="login-name-right">
+									<input name='loginmsg' style="width:130px" type="text" placeholder="请输入短信验证码" class="login-input5">	
+									<input type="button" value="发送短信验证码 " id='btn'>
+								</div>
+							</div>
+							<div class="login-name">
+								<div class="login-name-left">
+									<i>*</i>电子邮箱	
+								</div>
+								<div class="login-name-right">
+									<input name='loginem' type="text" placeholder="请输入有效邮箱" class="login-input6">	
+								</div>
+							</div>
+							<div class="xieyi">
+								<i class="true-true ok"></i>
+								<span>我已阅读并同意</span>
+								<a href='#'><<百联通会员注册协议>></a>
+							</div>
+							<input type="submit"  class="login-btn" value="立即注册 完成绑定">
+								
+							</inpt>
+						</form>	
+					</div>
+				</div>
+			
+		</div>
+	<!----------------------------------footer-->
+	<div id="footer" >
+		
+			<div class="bottom-nav" style="background:#f9f9f9">
+				<p>
+					<a href="#">关于我们</a><span>|</span>
+					<a href="#">联系我们</a><span>|</span>
+					<a href="#">加盟合作</a><span>|</span>
+					<a href="#">诚聘英才</a><span>|</span>
+					<a href="#">友情链接</a>
+				</p>
+				<div>
+					百联集团有限公司旗下 上海百联全渠道电子商务有限公司版权所有<span>|</span>
+					  客服电话：400-900-8800 <span>|</span>
+					   沪ICP备15028847号
+				</div>
+				<p class="last-p">
+					互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044
+				</p>
+				
+			</div>
+		
+		
+	</div>	
+	</body>
+</html>

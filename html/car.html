@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<script type="text/javascript" src='../js/jquery.js'></script>
+		<script type="text/javascript" src='../js/index.js'></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/shopcart.js"></script>
+		<script src="../js/car.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="../css/iconfont.css">
+	</head>
+	<body>
+		<div id="top">
+			<div class="wrap">
+				<div class="top-left">
+					<div class="top-left-show">
+						网站导航<span></span>
+					</div>
+					<div class="top-left-hide">
+						<span>百联集团官网</span>
+						<span>安付宝网</span>
+						<span>第一医药</span>
+						<span>ok会员卡专区</span>
+					</div>
+				</div>
+				<div class="top-right">
+					<ul>
+						<li>
+							<div class="top-right-show">
+								购物车
+							</div>
+						</li><span>|</span>	
+						<li>
+							<div class="top-right-show">
+								掌上百联<span class="crow"></span>
+								<div class="top-right-show-1">
+									<img src="../img/2-d.jpg">
+								</div>
+							</div>
+						</li><span>|</span>	
+						<li>
+							<div class="top-right-show">
+								客户服务<span class="crow"></span>
+								<div class="top-right-show-2">
+									<span >在线客服</span>
+									<span >帮助中心</span>
+								</div>	
+							</div>
+						</li><span>|</span>	
+						<li>
+							<div class="top-right-show">
+								充值缴费<span class="crow"></span>
+								<div class="top-right-show-3" >
+									<dl>
+										<dt>水煤电缴费</dt>
+										<dd>缴费首页</dd>
+										<dd>水费缴费</dd>
+										<dd>电费缴费</dd>
+																																																																																		
+									</dl>
+									<dl>
+										<dt>手机充值</dt>
+										<dd>话费充值</dd>
+										<dd>流量充值</dd>
+										<dd>更多充值</dd>																																																																									
+									</dl>
+									<dl style='border-right:none'>
+										<dt>游戏点卡</dt>
+										<dd>腾讯Q币充值</dd>
+										<dd>盛大点券充值</dd>
+										<dd>其他充值</dd>																																																																									
+									</dl>
+								</div>
+							</div>
+						</li><span>|</span>	
+						<li>
+							<div class="top-right-show">
+								我的百联<span class="crow"></span>
+								<div class="top-right-show-2">
+									<span > 我的订单</span>
+									<span > 我的评价</span>
+									<span > 我的积分</span>
+									<span > 我的收藏</span>
+								</div>
+							</div>
+						</li><span>|</span>	
+						<li>
+							<div class="top-right-show">
+								我的订单
+							</div>
+						</li><span>|</span>	
+						<li>
+							<div class="top-right-show">
+							<i></i>	<a class="login">请登录</a> <a>注册</a>
+							</div>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		<!---------------------------------------------------购物车-->
+		<div class="login-header" style="background:#fff;border-bottom: 1px solid #CCCCCC;">
+			<div class="login-wrap">
+				<a href="#"> <img src="../img/header-logo.png" title="logo" alt="百联"/></a>	
+				<span class="car-tit">购物车</span>
+			</div>
+		</div>
+		<!------------------------------------------------------购物车的主体内容----->
+		<div class="car-cont">
+			<div class="cont-wrap">
+				<div class="cont-top">
+					<div class="cont-top-tit">
+						全部商品<span class="totalCount"></span>件
+					</div>
+					<div class="cont-top-right">
+						<span class="grey">优惠:</span>
+						<span class="reduce">0.00</span>
+						商品金额(不含运费):
+						<span class="totalPrice"></span>
+						<div class="jiesuan" >去结算</div>
+					</div>
+				</div>
+				<!-------------------------第二部分-->
+				<div class="cont-second">
+					<div class="pro-item1">商品信息</div>
+					<div class="pro-item2">单价(元)</div>
+					<div class="pro-item3">件数</div>
+					<div class="pro-item3">金额(元)</div>
+					<div class="pro-item5">操作</div>
+				</div>
+				<div class="carlists-carlists">
+					
+				</div>
+				<div class="par-form">
+					<a class="pay-for">去结算</a>
+					<div class="car-massage">
+						<div class="car-massage1">商品金额(不含运费):<span class="totalPrice"></span></div>
+						<div class="car-massage2">
+							<span class="grey">优惠:</span>
+							<span class="reduce">0.00</span>
+						</div>	
+					</div>
+					<div class="car-massage3">已选择<i class="cuntnum"></i>件商品</div>
+				</div>
+			</div>	
+		</div>
+<!----------------------------------footer-->
+	<div id="footer" style="background:#f3f3f3">
+		<div class="wrap">
+			<div class="dl-cont">
+			<dl class="footer-lists">
+				<dt>新手入门</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">会员介绍</a></dd>
+				<dd><a href="#">常见问题</a></dd>
+				<dd><a href="#">发票说明</a></dd>
+				<dd><a href="#">联系客服</a></dd>
+			</dl>
+			<dl class="footer-lists">
+				<dt>新手入门</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">会员介绍</a></dd>
+				<dd><a href="#">常见问题</a></dd>
+				<dd><a href="#">发票说明</a></dd>
+				<dd><a href="#">联系客服</a></dd>
+			</dl>
+			<dl class="footer-lists">
+				<dt>新手入门</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">会员介绍</a></dd>
+				
+				<dd><a href="#">发票说明</a></dd>
+				<dd><a href="#">联系客服</a></dd>
+			</dl>
+			<dl class="footer-lists">
+				<dt>新手入门</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">会员介绍</a></dd>
+				<dd><a href="#">常见问题</a></dd>
+				<dd><a href="#">发票说明</a></dd>
+				<dd><a href="#">联系客服</a></dd>
+				<dd><a href="#">常见问题</a></dd>
+			</dl>
+			<dl class="footer-lists">
+				<dt>新手入门</dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">会员介绍</a></dd>
+				<dd><a href="#">常见问题</a></dd>
+				
+			</dl>
+			</div>
+		</div>	
+			<div class="bottom-nav">
+				<p>
+					<a href="#">关于我们</a><span>|</span>
+					<a href="#">联系我们</a><span>|</span>
+					<a href="#">加盟合作</a><span>|</span>
+					<a href="#">诚聘英才</a><span>|</span>
+					<a href="#">友情链接</a>
+				</p>
+				<div>
+					百联集团有限公司旗下 上海百联全渠道电子商务有限公司版权所有<span>|</span>
+					  客服电话：400-900-8800 <span>|</span>
+					   沪ICP备15028847号
+				</div>
+				<p class="last-p">
+					互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044
+				</p>
+				<div class="plice">
+				<a href="#"><img src="../img/plice1-png.png"><span>沪公网安备  31010102002366号</span></a>
+				<a href="#"><img src="../img/plice2.png"><span>沪网购大家评</span></a>
+				<a href="#"><img src="../img/plice1-png.png"><span>沪网购大家评</span></a>
+				</div>
+			</div>
+		
+		
+	</div>		
+	</body>
+</html>
